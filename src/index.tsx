@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import WalletApp from './WalletApp';
 import { QueryClient, QueryClientProvider } from "react-query";
 
 const client = new QueryClient();
 
 ReactDOM.render(
   <QueryClientProvider client={client}>
-    <App />
+    <WalletApp />
   </QueryClientProvider>
   , document.getElementById('root')
 );
